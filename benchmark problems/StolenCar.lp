@@ -17,9 +17,9 @@ terminates(steal,carParked,T) :- timepoint(T).
 
 :- holds_at(carParked,0).
 
-happens(park,20).
-
 :- holds_at(carParked,40).
+
+:- holds_at(carParked,T), happens(park,T), timepoint(T).
 
 holds_at(carParked,T) :- happens(steal,T), timepoint(T).
 

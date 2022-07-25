@@ -48,5 +48,5 @@ happens(tapOn,10).
 
 :- released_at(spilling,0).
 
-#show happens/2.
+
 #show holds_at/2.
